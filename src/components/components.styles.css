@@ -1,0 +1,43 @@
+h1 {
+  font-family: "Raleway", sans-serif;
+}
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+.contents {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.header {
+  background: navy;
+  color: lightblue;
+  padding: 0.2rem 0.5rem;
+}
+
+.footer {
+  text-align: center;
+}
+
+.postCard {
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid black;
+  box-shadow: 2px 2px black;
+  cursor: pointer;
+}
+
+.postCard_header {
+  font-size: 1.5rem;
+}
+.postCard:hover .postCard_header {
+  color: dodgerblue;
+}
+
+.postCard_subHeader {
+  display: flex;
+  justify-content: space-between;
+}
