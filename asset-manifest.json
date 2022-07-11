@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-markdown-blog/static/css/main.33c4445f.css",
-    "main.js": "/react-markdown-blog/static/js/main.06106278.js",
+    "main.css": "/react-markdown-blog/static/css/main.4b5ba253.css",
+    "main.js": "/react-markdown-blog/static/js/main.2069ded7.js",
     "static/media/raleway-latin-700italic.woff": "/react-markdown-blog/static/media/raleway-latin-700italic.744e43f35d44a20783d1.woff",
     "static/media/raleway-latin-800italic.woff": "/react-markdown-blog/static/media/raleway-latin-800italic.18fd02483646c7a5d9c5.woff",
     "static/media/raleway-latin-600italic.woff": "/react-markdown-blog/static/media/raleway-latin-600italic.4d6bafd6fb17ead14def.woff",
@@ -39,11 +39,11 @@
     "static/media/raleway-latin-500.woff2": "/react-markdown-blog/static/media/raleway-latin-500.86050dec57a4fdafb363.woff2",
     "static/media/raleway-latin-100.woff2": "/react-markdown-blog/static/media/raleway-latin-100.16d7dcebbcc7dee6b7c8.woff2",
     "index.html": "/react-markdown-blog/index.html",
-    "main.33c4445f.css.map": "/react-markdown-blog/static/css/main.33c4445f.css.map",
-    "main.06106278.js.map": "/react-markdown-blog/static/js/main.06106278.js.map"
+    "main.4b5ba253.css.map": "/react-markdown-blog/static/css/main.4b5ba253.css.map",
+    "main.2069ded7.js.map": "/react-markdown-blog/static/js/main.2069ded7.js.map"
   },
   "entrypoints": [
-    "static/css/main.33c4445f.css",
-    "static/js/main.06106278.js"
+    "static/css/main.4b5ba253.css",
+    "static/js/main.2069ded7.js"
   ]
 }
