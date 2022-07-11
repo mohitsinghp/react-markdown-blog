@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const PostCard = ({ title, author, date, content, id }) => {
   return (
-    <div className="postCard">
+    <div className="postCard zoom">
       <Link to={`/post/${id}`}>
         <span className="postCard_header">{title}</span>
       </Link>

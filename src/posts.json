@@ -1,16 +1,1 @@
-[
-  {
-    "id": 1657391400,
-    "title": "My Second Post!\r",
-    "author": "Mohit\r",
-    "date": "July 10, 2022\r",
-    "content": "\r\n# Welcome to My Blog\r\n\r\n*It's a beautiful thing againg*"
-  },
-  {
-    "id": 1657305000,
-    "title": "My First Post, Yo!\r",
-    "author": "Mohit\r",
-    "date": "July 9, 2022\r",
-    "content": "\r\n# Welcome to  My Blog\r\n\r\n*It's a beautiful thing*"
-  }
-]
+[{"id":1657391400,"title":"Cloning an Object\r","author":"Mohit\r","date":"July 10, 2022\r","content":"\r\nHere we are going to create a function which will clone or copy an object to another object.\r\n\r\nIf the Object only contains primitive value such as **`strings`**, **`numbers`**, **`booleans`** etc. We can use the function ***`Object.assign()`***. \r\n\r\n***`Object.assign()`*** function takes two arguments -\r\n1. new object which is going to be generated\r\n2. source object from which the data is to be copied.\r\n\r\nExample:- \r\n```js\r\nlet swift = {\r\n    brand: 'Maruti',\r\n    fuel: 'petrol',\r\n    doors: 4,\r\n    type: 'hatchback'\r\n};\r\n\r\nlet baleno = {};\r\n\r\nObject.assign(baleno, swift);\r\n\r\nbaleno.type = 'premium hatchback';\r\n\r\nconsole.log(baleno, swift);\r\n```\r\nThis results in:-\r\n```js\r\n{brand: \"Maruti\", fuel: \"petrol\", doors: 4, type: \"hatchback\"}\r\n{brand: \"Maruti\", fuel: \"petrol\", doors: 4, type: \"premium hatchback\"}\r\n```\r\nThis solution does not allows us to peform deep cloning. *Deep Cloning* stands for copying the object which contains objects inside it as its properties.\r\nFor that purpose we can use ***`JSON.parse(JSON.stringify(source_object))`***. This method first converts the whole `source-object` into a string and then parse(resolve into its component parts) it to another object.\r\n\r\nApart from doing the above two we can simply create our own function that will do the same using the recursion.\r\nFor Example:-\r\n```js\r\nlet bmw = {\r\n  model: 'x4',\r\n  fuel: 'petrol',\r\n  engine: {\r\n  \ttype: 'v6'\r\n  }\r\n}\r\n\r\nlet car = {};\r\n\r\nfunction clone(src){\r\n    let result = {};\r\n    let keys = Object.keys(src);\r\n    //['model', 'fuel', 'engine'];\r\n    keys.forEach(key => {\r\n        if(typeof src[key] === \"object\") {\r\n            result[key] = clone(src[key]);\r\n        }else {\r\n            result[key] = src[key];\r\n        }\r\n    })\r\n  return result;\r\n}\r\n\r\ncar = clone(bmw);\r\n\r\ncar.fuel = 'disel';\r\ncar.engine.type='v8';\r\n\r\nconsole.log(car,bmw);\r\n```\r\nThis results in-\r\n```js\r\n{model: \"x4\", fuel: \"disel\", engine: {type: \"v8\"}}\r\n{model: \"x4\", fuel: \"petrol\", engine: {type: \"v6\"}}\r\n```\r\nIn this we are providing an **`if statement`** which compares the keys inside the object and if the key returns value equal to the `object` we will call the same function again, but this time inside the conditional statement."},{"id":1657305000,"title":"My First Post, Yo!\r","author":"Mohit\r","date":"July 9, 2022\r","content":"\r\n# Welcome to  My Blog\r\n\r\n*It's a beautiful thing*"}]

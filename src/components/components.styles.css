@@ -27,11 +27,11 @@ h1 {
   margin-bottom: 1.5rem;
   border: 1px solid black;
   box-shadow: 2px 2px black;
-  cursor: pointer;
 }
 
 .postCard_header {
   font-size: 1.5rem;
+  cursor: pointer;
 }
 .postCard:hover .postCard_header {
   color: dodgerblue;
@@ -40,4 +40,15 @@ h1 {
 .postCard_subHeader {
   display: flex;
   justify-content: space-between;
+}
+
+.zoom {
+  transition: transform 0.2s;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.05); /* IE 9 */
+  -webkit-transform: scale(1.05); /* Safari 3-8 */
+  transform: scale(1.05);
+  box-shadow: 4px 4px black;
 }
