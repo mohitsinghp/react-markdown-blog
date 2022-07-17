@@ -1,6 +1,6 @@
 ---
 title: Cloning an Object
-author: Mohit
+author: MSP
 date: July 10, 2022
 ---
 

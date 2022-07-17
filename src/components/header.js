@@ -1,10 +1,16 @@
 import React from "react";
 import "./components.styles.css";
+import Logo from '../assets/logo.png'
 
 const Header = () => {
   return (
     <div className="header">
-      <h1>React Markdown Blog</h1>
+      <div className="content">
+        <img height="80" src={Logo} alt="MSP Writes"/>
+        <div className="searchBar">
+          <input type="search" placeholder="Search " />
+        </div>
+      </div>
     </div>
   );
 };
